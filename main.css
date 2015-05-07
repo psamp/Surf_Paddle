@@ -1,0 +1,55 @@
+/*# surf + paddle colors
+- navbar text: #003151
+- post title text, popular texts: #003253
+- anne marie, post author, block quote: #0073BB
+- link/span,social, sidebar section heading: #A7B9C5
+- tiy footer: #AABCC6
+- link rollover: #0066B5*/
+
+/*container*/
+.container {
+	width: 1300px;
+	margin-left:auto;
+	margin-right:auto;
+	padding-top: 0;
+	margin-top: 0;
+}
+
+/*header*/
+
+.header {
+	background-image: url("images/header.jpg");
+	height:523px;
+	text-align:center;
+	background-repeat: no-repeat;
+	padding-top: 0;
+	font-family:'Open Sans';
+}
+
+/*nav*/
+
+.nav {
+	margin-top: 11px;
+}
+
+/*navone*/
+
+.navone {
+	float:left;
+	padding-left:50px;
+
+}
+
+.navone span {
+	display:inline-block;
+	vertical-align: middle;
+	text-transform: uppercase;
+	font-weight:300;
+	font-family:'Open Sans';
+}
+
+.nav image {
+	height:45px;
+	width:45px;
+}
+
