@@ -1,9 +1,8 @@
 /*container*/
 
 body {
-	position:center;
 	list-style: none;
-	width:94.5%;
+	width:96%;
 	margin:0 auto;
 	
 }
@@ -25,55 +24,78 @@ img {
 header {
 	background-image: url("images/header.jpg");
 	height:523px;
+	position:relative;
 	width:100%;
 	text-align:center;
 	background-repeat: no-repeat;
-	background-size:100%;
-	-webkit-background-size: cover;
-  	-moz-background-size: cover;
-  	-o-background-size: cover;
   	background-size: 100%;
+  	margin-bottom: 72px;
 }
 
 .navone {
 	float:left;
-	padding-left:50px;
-	display:inline-block;
-	vertical-align: middle;
 	margin-top: 10px;
-	margin-left:93px;
-	margin-right:93px;
+	margin-left:193px;
 	font-weight: 700;
 	font-size:1.2em;
 	color:#08324F;
+	display: inline-block;
+	vertical-align: middle;
 
 }
 
 .navone span {
-	display:inline-block;
-	vertical-align: middle;
 	text-transform: uppercase;
 	font-weight:300;
 	 font-size:0.875em;
 	font-family:'Open Sans';
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.blogtitle:hover {
+	color:white;
+	text-decoration: none;
+	opacity: 0.4;
+	-webkit-transition: all 1000ms ease;
+	-moz-transition: all 1000ms ease;
+	-ms-transition: all 1000ms ease;
+	-o-transition: all 1000ms ease;
+	transition: all 1000ms ease;
 }
 
 .navtwo {
-	display:inline-block;
-	vertical-align: middle;
 	float:right;
-	margin-right:30px;
+	/*margin-right:30px;*/
 	font-family:'Oswald';
 	text-transform:uppercase;
-	font-size:1.125em;
+	font-size:1.125em;/*
+	margin-top:20px;*/
+	color:#08324F;
 	margin-top:20px;
-	color:#083451;
+	margin-right:193px;
+}
+
+.navtwo a:hover {
+	color:white;
+	text-decoration: none;
+	opacity: 0.4;
+	-webkit-transition: all 1000ms ease;
+	-moz-transition: all 1000ms ease;
+	-ms-transition: all 1000ms ease;
+	-o-transition: all 1000ms ease;
+	transition: all 1000ms ease;
+}
+
+.navtwo a {
+	color:#08324F;
+	text-decoration: none;
 }
 
 .navtwo span {
-	margin-right:18px;
+	margin-right:18px;/*
 	display:inline-block;
-	vertical-align: middle;
+	vertical-align: middle;*/
 }
 
 .nav image {
@@ -92,6 +114,7 @@ header {
 	color:white;
 	text-shadow: 1.2px 1.2px 1.2px ;
 	margin-top:185px;
+	clear:both;
 
 }
 
@@ -100,9 +123,9 @@ header {
 	color:black;
 	opacity:.5;
 	font-size: 0.875em;
-	display:inline;
-	vertical-align:center;
-	margin-top: -300px
+	text-align:center;
+	clear:both;
+	margin-top: -30px;
 }
 
 /*post*/
@@ -111,8 +134,6 @@ header {
 	width:47.38461538461539%;
 	float:left;
 	margin-left: 12.615384615384615%;
-	right:0;
-	margin-top: 72px;
 }
 
 .post h1 {
@@ -120,7 +141,6 @@ header {
 	text-transform:uppercase;
 	color:#083452;
 	font-size: 3.625em;
-	margin-top:0;
 
 }
 
@@ -170,8 +190,6 @@ header {
 	width:278px;
 	margin-right: 12.615384615384615%;
 	float:right;
-	left:0;
-	margin-top:72px;
 
 
 }
