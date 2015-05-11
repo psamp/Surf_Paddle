@@ -335,7 +335,6 @@ font-size:1m;
 
 .box {
   width: 25%;
-  height: 330px;
   position: relative;
   float: left;
   margin: 0;
@@ -349,6 +348,7 @@ font-size:1m;
   margin: 0;
   border:0;
   padding:0;
+  display: block;
 }
 
 .box:after {
