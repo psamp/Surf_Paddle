@@ -206,13 +206,20 @@ article blockquote {
 .author {
 	color:#0065B6;
 	font-size:.75em;
+	display: inline-block;
+	vertical-align: middle;
+	line-height: 25px;
+}
+
+.author span {
+	color:#B1C1CC;
 }
 
 .author img {
 	width:25px;
 	height:25px;
-	vertical-align: middle;
 	display: inline-block;
+	vertical-align: middle;
 }
 
 .author p {
@@ -364,7 +371,11 @@ font-size:1m;
   opacity: 0;
 }
 
-.popposts span {
+.box span {
+
+	display: inline-block;
+	vertical-align: middle;
+	float:left;
 
 }
 
@@ -397,6 +408,7 @@ footer {
 	display: inline-block;
 	vertical-align: middle;
 	line-height: 97px;
+	margin-right:10px;
 }
 
 .footnav {
