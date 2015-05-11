@@ -2,7 +2,7 @@
 
 body {
 	list-style: none;
-	width:91.54%;
+	width:90.99%;
 	margin:0 auto;
 	
 }
@@ -268,6 +268,7 @@ aside {
 	margin-right: 12.615384615384615%;
 	float:right;
 	font-size: 0.813em;
+	color:#A3B3BF;
 }
 
 .bio {
@@ -301,14 +302,13 @@ font-size:1m;
 	margin-bottom:-8px;
 	text-transform: uppercase;
 	font-family: 'Oswald', sans-serif;
+	clear:both;
 }
 /*end sidebar*/
 
 /*popular posts*/
 
 .popposts {
-	display: inline-block;
-	vertical-align: middle;
 	text-align: center;
 	width:100%;
 	border-top: 1px solid #E1E7EA;
@@ -320,49 +320,54 @@ font-size:1m;
 	font-family: 'Oswald', sans-serif;
 	text-transform:uppercase;
 	color:#083452;
-	font-size: 3.500em;
+	font-size: 4em;
 	margin-top:44px;
 	margin-bottom: 44px;
 	text-decoration: none;
-	padding: 0;
-
 }
 
 .box {
   width: 25%;
   height: 330px;
-  margin-right: 0;
   position: relative;
-  image-size:100%;
   float: left;
+  margin: 0;
+  border:0;
+  padding:0;
+  display: block;
+  vertical-align: middle;
+}
+
+.box img {
+  margin: 0;
+  border:0;
+  padding:0;
 }
 
 .box:after {
-  background: blue;
+  background:#1B77B8;
   position: absolute;
   top:0;
   left: 0;
   right: 0;
   bottom: 0;
-  opacity: .4;
+  opacity: .8;
   content: "";
   -webkit-transition: all 1000ms ease;
-	-moz-transition: all 1000ms ease;
-	-ms-transition: all 1000ms ease;
-	-o-transition: all 1000ms ease;
-	transition: all 1000ms ease;
+  -moz-transition: all 1000ms ease;
+  -ms-transition: all 1000ms ease;
+  -o-transition: all 1000ms ease;
+  transition: all 1000ms ease;
 }
 
 .box:hover:after {
   opacity: 0;
 }
 
-.right-box {
-  width: 50px;
-  height: 50px;
-  margin: 5px;
-  float: left;
+.popposts span {
+
 }
+
 /*end more popular posts*/
 
 /*footer*/
@@ -370,6 +375,34 @@ footer {
 	clear:both;
 	background-color: #083452;
 	height:97px;
+	line-height: 97px;
+	font-size: 0.87em;
+	color:#A3B3BF;
+	text-align: center;
+	clear:both;
+}
+
+.tiy {
+	float:left;
+	margin-left:166px;
+}
+
+.tiy img {
+	display: inline-block;
+	vertical-align: middle;
+	line-height: 97px;
+}
+
+.tiy span {
+	display: inline-block;
+	vertical-align: middle;
+	line-height: 97px;
+}
+
+.footnav {
+	float:right;
+	margin-right:166px;
+	line-height: 97px;
 }
 
 /*end footer*/
