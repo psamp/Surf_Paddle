@@ -43,14 +43,13 @@ header {
   display: inline-block;
   vertical-align: middle;
   margin-top: 10px; }
-
-.navone span {
-  text-transform: uppercase;
-  font-weight: 300;
-  font-size: 0.875em;
-  font-family: 'Open Sans';
-  display: inline-block;
-  vertical-align: middle; }
+  .navone span {
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 0.875em;
+    font-family: 'Open Sans';
+    display: inline-block;
+    vertical-align: middle; }
 
 .blogtitle:hover {
   color: white;
@@ -70,27 +69,20 @@ header {
   color: #08324F;
   margin-top: 20px;
   margin-right: 193px; }
-
-.navtwo a {
-  color: #083451;
-  text-decoration: none; }
-
-.navtwo a:hover {
-  color: white;
-  text-decoration: none;
-  opacity: 0.4;
-  -webkit-transition: all 1000ms ease;
-  -moz-transition: all 1000ms ease;
-  -ms-transition: all 1000ms ease;
-  -o-transition: all 1000ms ease;
-  transition: all 1000ms ease; }
-
-.navtwo span {
-  margin-right: 18px; }
-
-.nav image {
-  height: 45px;
-  width: 45px; }
+  .navtwo span {
+    margin-right: 18px; }
+  .navtwo a {
+    color: #083451;
+    text-decoration: none; }
+    .navtwo a:hover {
+      color: white;
+      text-decoration: none;
+      opacity: 0.4;
+      -webkit-transition: all 1000ms ease;
+      -moz-transition: all 1000ms ease;
+      -ms-transition: all 1000ms ease;
+      -o-transition: all 1000ms ease;
+      transition: all 1000ms ease; }
 
 .pgtitle h1 {
   display: inline-block;
@@ -180,37 +172,24 @@ article {
   background-color: #93a4b2;
   font-size: 0.7em;
   display: inline-block; }
-
-.buttons .button a {
-  color: #fff;
-  text-decoration: none;
-  padding: 6px;
-  display: inline-block; }
-
-.buttons .button:before {
-  content: "";
-  background-color: #485158;
-  background-repeat: no-repeat;
-  background-position: center;
-  display: inline-block;
-  height: 28px;
-  width: 28px;
-  vertical-align: middle; }
-
-.buttons .button:hover {
-  background-color: #1259a7; }
-
-.buttons .button:hover:before {
-  background-color: #17354e; }
-
-.buttons .button.comments:before {
-  background-image: url("images/icon-comment.png"); }
-
-.buttons .button.later:before {
-  background-image: url("images/icon-upload.png"); }
-
-.buttons .button.share:before {
-  background-image: url("images/icon-share.png"); }
+  .buttons .button:hover {
+    background-color: #1259a7; }
+  .buttons .button:hover:before {
+    background-color: #17354e; }
+  .buttons .button:before {
+    content: "";
+    background-color: #485158;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+    height: 28px;
+    width: 28px;
+    vertical-align: middle; }
+  .buttons .button a {
+    color: white;
+    text-decoration: none;
+    padding: 6px;
+    display: inline-block; }
 
 aside {
   width: 21.384615384615387%;
@@ -298,7 +277,6 @@ aside {
   .box h4 {
     position: absolute;
     bottom: 0;
-    left: 15px;
     font-family: 'Oswald';
     text-transform: uppercase;
     font-size: 1.750em;
