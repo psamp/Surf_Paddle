@@ -4,7 +4,18 @@ $white: white;
 $sidebarfontcolor: #A3B3BF;
 $linkgrey: #B1C1CC;
 $linknavy: #0065B6;
-
+$opensans: 'Open Sans';
+$oswald: 'Oswald';
+$width100:100%;
+$width91:91%;
+$width47:47.38461538461539%;
+$width25:25px;
+$width28:28px;
+$linktransition: all 1000ms ease;
+$opacity4: .4;
+$opacity5: .5;
+$opacity75: .75;
+$opacitynone: 0;
 // sidebar
 $sidebarwidgetblue: #106DB3;
 $sidebarfontcolor: #A3B3BF;
@@ -21,14 +32,27 @@ $buttoncolor: #93a4b2;
 $buttonhover:#1259a7;
 $buttonhoverbefore:#17354e;
 $buttonbefore: #485158;
+$iconcomment:url("images/icon-comment.png"); 
+$iconlater:url("images/icon-upload.png"); 
+$iconshare: url("images/icon-share.png");
 
 //footer
 $footercolor:#083452;
 
+// link transitions
+@mixin transition($linktransition) {
+  -webkit-transition: all 1000ms ease;
+  -moz-transition: all 1000ms ease;
+  -ms-transition: all 1000ms ease;
+  -o-transition: all 1000ms ease;
+  transition: all 1000ms ease;
+}
+// END VARIABLES & MIXINS
+
 // BODY
 body {
   list-style: none;
-  width:91%;
+  width:$width91;
   margin:0 auto;
   
 }
@@ -38,13 +62,13 @@ body {
 .container {
   margin-left: auto;
   margin-right: auto;
-  font-family: 'Open Sans';
-  width:100%;
-  font-size:100%;
+  font-family: $opensans;
+  width:$width100;
+  font-size:$width100;
 }
 
 img {
-  max-width: 100%;
+  max-width: $width100;
 }
 
 a {
@@ -53,11 +77,7 @@ a {
     &:hover {
       color:$linknavy;
       text-decoration:underline;
-      -webkit-transition: all 1000ms ease;
-      -moz-transition: all 1000ms ease;
-      -ms-transition: all 1000ms ease;
-      -o-transition: all 1000ms ease;
-      transition: all 1000ms ease;
+      @include transition(1000ms);
     }
 }
 // END CONTAINER
@@ -66,10 +86,10 @@ a {
 header {
   background-image: url("images/header.jpg");
   height:523px;
-  width:100%;
+  width:$width100;
   text-align:center;
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: $width100;
   margin-bottom: 72px;
 }
 
@@ -86,7 +106,7 @@ header {
     text-transform: uppercase;
     font-weight:300;
     font-size:0.875em;
-    font-family: 'Open Sans';
+    font-family: $opensans;
     display: inline-block;
     vertical-align: middle;
   }
@@ -95,17 +115,13 @@ header {
 .blogtitle:hover {
   color:white;
   text-decoration: none;
-  opacity: 0.4;
-  -webkit-transition: all 1000ms ease;
-  -moz-transition: all 1000ms ease;
-  -ms-transition: all 1000ms ease;
-  -o-transition: all 1000ms ease;
-  transition: all 1000ms ease;
+  opacity: $opacity4;
+  @include transition(1000ms);
 }
 
 .navtwo {
   float:right;
-  font-family: 'Oswald';
+  font-family: $oswald;
   text-transform:uppercase;
   font-size:1.125em;
   color:#08324F;
@@ -122,12 +138,8 @@ header {
       &:hover {
       color:white;
       text-decoration: none;
-      opacity: 0.4;
-      -webkit-transition: all 1000ms ease;
-      -moz-transition: all 1000ms ease;
-      -ms-transition: all 1000ms ease;
-      -o-transition: all 1000ms ease;
-      transition: all 1000ms ease;
+      opacity: $opacity4;
+      @include transition(1000ms);
     }
   }
 }
@@ -139,7 +151,7 @@ header {
       vertical-align: middle;
       text-transform: uppercase;
       line-height:30px;
-      width:100%;
+      width:$width100;
       text-decoration: bold;
       font-weight:400;
       font-size:6.250em;
@@ -150,7 +162,7 @@ header {
     h2 {
       font-weight:400;
       color:$black;
-      opacity:.5;
+      opacity:$opacity5;
       font-size: 0.875em;
       text-align:center;
       clear:both;
@@ -161,7 +173,7 @@ header {
 
 // ARTICLE
 article {
-  width:47.38461538461539%;
+  width:$width47;
   float:left;
   margin-left: 12.615384615384615%;
   margin-top: 0;
@@ -172,7 +184,7 @@ article {
     h1 {
       margin: 0;
         a {
-          font-family: 'Oswald', sans-serif;
+          font-family: $oswald;
           text-transform:uppercase;
           color:#083452;
           font-size: 1.813em;
@@ -183,12 +195,8 @@ article {
             &:hover {
             text-decoration:none;
             color:#083452;
-            opacity: 0.4;
-            -webkit-transition: all 1000ms ease;
-            -moz-transition: all 1000ms ease;
-            -ms-transition: all 1000ms ease;
-            -o-transition: all 1000ms ease;
-            transition: all 1000ms ease;
+            opacity: $opacity4;
+            @include transition(1000ms);
             margin: 0;
         }
       }
@@ -204,7 +212,7 @@ article {
   blockquote {
     border-left: 2px solid #B1C1CC;
     text-transform: uppercase;
-    font-family: 'open sans';
+    font-family: $opensans;
     font-weight: 300;
     font-size: 1.8em;
     color:$linknavy;
@@ -226,15 +234,15 @@ article {
   }
 
   img {
-  width:25px;
+  width:$width25;
   height:25px;
   display: inline-block;
   vertical-align: middle;
 }
-p {
-  color:$linknavy;
-  font-size:100%;
-}
+  p {
+    color:$linknavy;
+    font-size:$width100;
+  }
 }
 // SOCIAL MEDIA BUTTONS
 .buttons .button {
@@ -247,7 +255,7 @@ p {
   }
 
   &:hover:before {
-  background-color: $buttonhoverbefore; 
+    background-color: $buttonhoverbefore; 
   }
 
   &:before {
@@ -256,9 +264,21 @@ p {
     background-repeat: no-repeat;
     background-position: center;
     display: inline-block;
+    width: $width28;
     height: 28px;
-    width: 28px;
     vertical-align: middle; 
+  }
+
+  &.comments:before {
+    background-image: $iconcomment; 
+  }
+
+  &.later:before {
+    background-image: $iconlater; 
+  }
+
+  &.share:before {
+    background-image: $iconshare; 
   }
 
   a {
@@ -269,17 +289,6 @@ p {
 }
 }
 
-// .buttons .button.comments:before {
-//     background-image: url("images/icon-comment.png"); 
-// }
-
-// .buttons .button.later:before {
-//   background-image: url("images/icon-upload.png"); 
-// }
-
-// .buttons .button.share:before {
-//     background-image: url("images/icon-share.png"); 
-// }
 // END SOCIAL MEDIA BUTTONS
 // END ARTICLE
 
@@ -319,7 +328,7 @@ font-size:1em;
     color:$sidebarwidgetblue;
     margin-bottom:-8px;
     text-transform: uppercase;
-    font-family: 'Oswald';
+    font-family: $oswald;
     clear:both;
   }
 }
@@ -329,11 +338,11 @@ font-size:1em;
 
 .popposts {
   text-align: center;
-  width:100%;
+  width:$width100;
   border-top: 1px solid $poppostsborder;
   float:left;
     h1 {
-    font-family: 'Oswald';
+    font-family: $oswald;
     text-transform:uppercase;
     color:$poppostsh1;
     font-size: 4em;
@@ -367,17 +376,13 @@ font-size:1em;
     left: 0;
     right: 0;
     bottom: 0;
-    opacity: .8;
+    opacity: $opacity75;
     content: "";
-    -webkit-transition: all 1000ms ease;
-    -moz-transition: all 1000ms ease;
-    -ms-transition: all 1000ms ease;
-    -o-transition: all 1000ms ease;
-    transition: all 1000ms ease;
+    @include transition(1000ms);
     }
 
   &:hover:after {
-    opacity: 0;
+    opacity: $opacitynone;
     }
 
   span {
@@ -390,7 +395,7 @@ font-size:1em;
   h4 {
   position: absolute;
   bottom: 0;
-  font-family: 'Oswald';
+  font-family: $oswald;
   text-transform:uppercase;
   font-size:1.750em;
   color:#083452;
